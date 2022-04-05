@@ -1,13 +1,17 @@
 <h3>My Products</h3>
-<p>Hi</p>
-<div *ngFor="let p; for: products">
+<div *ngFor="let i of products">
   <h4>
-    Available Models:<br />Model {{ p.id }}:
-    <a [title]="p.name + 'model'">{{ p.name }}</a
+    Available Models:<br />Model {{ i.id }} :
+    <a [title]="i.name + 'model'">{{ i.name }}</a
     ><br />
-    <h5 *ngIf="p.description">Description:{{ p.description }}</h5>
+    <h5 *ngIf="i.description">Description:{{ i.description }}</h5>
   </h4>
+  <button type="button" (click)="AddCart()">Add Cart</button>&nbsp;
+  <button type="button" (click)="price()">Check Price</button>
 </div>
+<br />
+<button type="button" (click)="ViewCart()">View Cart</button>&nbsp;
+<button type="button" (click)="buy()">Buy Now</button>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

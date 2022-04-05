@@ -5,16 +5,25 @@ import { products } from '../products';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
   products = products;
 
-  share() {
-    window.alert('The product has been shared!');
+  ViewCart() {
+    window.alert('Moved to cart!');
+  }
+  AddCart() {
+    window.alert('Added to cart successfully!');
+  }
+
+  buy() {
+    window.alert('Purchased successfull!');
+  }
+  price() {
+    window.alert('Select the best price!');
   }
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
