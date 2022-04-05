@@ -1,0 +1,16 @@
+<h2>Products</h2>
+
+<div *ngFor="let p of products">
+  <h3>
+    Available Models:<br />Model {{p:id}} :<a
+      [title]="p.name + 'model'"
+      >{{p:name}}</a
+    ><br />
+    <h4 *ngIf="p.description">Description:{{ p.description }}</h4>
+  </h3>
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
