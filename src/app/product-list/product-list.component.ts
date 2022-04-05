@@ -23,6 +23,10 @@ export class ProductListComponent {
   price() {
     window.alert('Select the best price!');
   }
+  onNotify()
+  {
+    window.alert('Notification!');
+  }
 }
 
 /*
