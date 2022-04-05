@@ -1,13 +1,12 @@
-<h2>Products</h2>
+<h3>Products</h3>
 
-<div *ngFor="let p of products">
-  <h3>
-    Available Models:<br />Model {{p:id}} :<a
-      [title]="p.name + 'model'"
-      >{{p:name}}</a
-    ><br />
-    <h4 *ngIf="p.description">Description:{{ p.description }}</h4>
-  </h3>
+<div *ngFor="let p for products">
+  <h4>
+    Available Models:<br>Model {{p.id}}:
+    <a [title]="p.name+'model'">{{p.name}}</a
+    ><br>
+    <h5 *ngIf="p.description">Description:{{p.description}}</h5>
+  </h4>
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
