@@ -18,7 +18,7 @@ export class ProductListComponent {
   }
 
   buy() {
-    window.alert('Purchased successfull!');
+    window.alert('Purchased successfully!');
   }
   price() {
     window.alert('Select the best price!');

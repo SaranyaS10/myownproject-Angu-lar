@@ -1,11 +1,10 @@
 <h3>My Products</h3>
+<h4>Available Models</h4>
 <div *ngFor="let i of products">
-  <h4>
-    Available Models:<br />Model {{ i.id }} :
-    <a [title]="i.name + 'model'">{{ i.name }}</a
-    ><br />
-    <h5 *ngIf="i.description">Description:{{ i.description }}</h5>
-  </h4>
+  Model {{ i.id }} : <a [title]="i.name + 'model'">{{ i.name }}</a
+  ><br />
+  <h5 *ngIf="i.description">Description:{{ i.description }}</h5>
+
   <button type="button" (click)="AddCart()">Add Cart</button>&nbsp;
   <button type="button" (click)="price()">Check Price</button>
 </div>
